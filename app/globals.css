@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.6%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 0 0% 3.6%;
+    --foreground: 0 0% 98.2%;
+    --muted: 0 0% 14.3%;
+    --muted-foreground: 0 0% 63.9%;
+    --border: 0 0% 14.3%;
+    --input: 0 0% 14.3%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 222 47% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98.2%;
+  }
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
